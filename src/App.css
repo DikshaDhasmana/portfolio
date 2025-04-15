@@ -246,7 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   display: inline-block;
 }
 .banner h1 {
@@ -296,9 +296,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  animation: blink 0.7s steps(1) infinite;
 }
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 
 /************ Skills Css ************/
 .skill {

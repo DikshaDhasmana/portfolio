@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/navIcon1.svg';
 import navIcon2 from '../assets/img/navIcon2.svg';
 import navIcon3 from '../assets/img/navIcon3.svg';
+import navIcon4 from '../assets/img/navIcon4.svg';
 
 export const NavBar = () => {
     const [activeLink, setActivelink] = useState('home');
@@ -42,9 +43,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href='#'><img src={navIcon1} alt=""/></a>
-                <a href='#'><img src={navIcon2} alt=""/></a>
-                <a href='#'><img src={navIcon3} alt=""/></a>
+                <a href='https://www.linkedin.com/in/diksha-sharma-1650b1258/'><img src={navIcon1} alt=""/></a>
+                <a href='https://x.com/DikshaDhasmana'><img src={navIcon2} alt=""/></a>
+                <a href='https://www.instagram.com/diksha_dhasmana/'><img src={navIcon3} alt=""/></a>
+                <a href='https://github.com/DikshaDhasmana'><img src={navIcon4} alt=""/></a>
+
               </div>
               <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
             </span>
